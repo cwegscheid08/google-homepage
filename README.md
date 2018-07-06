@@ -1,1 +1,3 @@
 # google-homepage
+
+This project is my first assignment for The Odin Project.  I will be building a web page using HTML and CSS, using multiple tools to construct and style the page.  I will be using this experience to understand the flow of front end development.  I fully expect to make many mistakes along the way and for it to take longer than I expect, but am overly excited about working through this and becoming a better deveolper.
