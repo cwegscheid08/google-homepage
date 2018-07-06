@@ -1,11 +1,14 @@
+/*GRID/ GRID ASSIGNMENT*/
+
+
 .container {
 	display: grid;
 	height: auto;
 	width: 600px;
 	grid-template-columns: repeat(3, 1fr);	
-	grid-auto-rows: minmax(100px, auto);
+	grid-template-rows: repeat(3, 1fr);
 	grid-template-areas: 
-	"nav_l nav_l nav_r" 
+	"nav nav nav" 
 	". search ." 
 	"footer footer footer";
 }
@@ -14,15 +17,59 @@
 	grid-area: search;
 }
 
-.navigation.right {
-	grid-area: nav_r;
+.nav {
+	grid-area: nav;
+	background-color: lightblue;
+}
+
+footer {
+	grid-area: footer;
+	background-color: lightblue;	
+}
+
+body .container footer .foot_r {
+	justify-content: flex-end;
+	display: inline;
+}
+
+/*footer .foot_r {
+	grid-area: footer;
+}
+
+footer .foot_l {
+	grid-area: footer;
+}
+
+.right a{
+	grid-area: nav;
+}
+
+.left a{
+	grid-area: nav;*/
+}
+
+body .container .nav, .left, .right {
+	display: inline;
+
 }
 
 
-.navigation .left {
-	
-	grid-area: 
+
+
+/*NAVIGATION BAR*/
+
+body .container .nav .right a, body .container .nav .left a {
+	text-decoration-line: none;
+	color: black;
 }
+
+body .container footer .foot_l a, body .container footer .foot_r a {
+	text-decoration-line: none;
+	color: black;
+}
+
+
+/*SEARCH AREA*/
 
 .box {
 	width: auto;
