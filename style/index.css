@@ -13,6 +13,9 @@
 	"footer footer footer";
 	justify-content: center;
 	align-content: center;
+	font-family: sans-serif;
+	font-size: 12px;
+
 
 }
 
@@ -25,6 +28,7 @@
 	grid-area: nav;
 	list-style-type: none;
 	display: inline-block;	
+	word-spacing: 15px;
 }
 
 .left, .right {
@@ -34,10 +38,16 @@
 footer {
 	grid-area: footer;
 	display: inline-block;
+	align-self: end;
+	background: whitesmoke;
+	border: 1px solid gainsboro;
+	padding: 0px 0px 20px 0px;
+	word-spacing: 15px;
 }
 
 .foot_l, .foot_r {
-	display: inline;
+	display: inline-block;
+
 }
 
 
@@ -67,6 +77,19 @@ body .container footer .foot_l a, body .container footer .foot_r a {
 
 /*SEARCH AREA*/
 
+.search{
+
+}
+
 .box {
-	width: auto;
+	width: 400px;
+	height: 30px;
+	border-radius: 2px;
+	box-shadow: -2px 1px 5px -2px #b3b3b3;
+	border: 1px solid #eaeaea;
+}
+
+.button {
+	background: gainsboro;
+	color: gray
 }
