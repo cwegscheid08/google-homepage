@@ -3,12 +3,12 @@
 html {
 	margin: 0;
 	padding: 0;
-	
+
 }
 
 .container {
 	display: grid;
-	height: 800px;
+	height: 750px;
 	width: auto;
 	grid-template-columns: repeat(3, 1fr);	
 	grid-template-rows: repeat(3, 1fr);
@@ -46,7 +46,7 @@ footer {
 	align-self: end;
 	background: whitesmoke;
 	border: 1px solid #e8e8e8d1;
-	padding: 0px 0px 20px 0px;
+	padding: 0px 0px 10px 0px;
 	word-spacing: 15px;
 }
 
@@ -55,6 +55,13 @@ footer {
 
 }
 
+.foot_l {
+	padding: 0px 0px 0px 5px;
+}
+
+.foot_r {
+	padding: 0px 40px 0px 0px;
+}
 
 /*NAVIGATION/FOOTER ALIGNMENT*/
 
