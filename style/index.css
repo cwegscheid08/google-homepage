@@ -3,60 +3,56 @@
 
 .container {
 	display: grid;
-	height: auto;
-	width: 600px;
+	height: 800px;
+	width: auto;
 	grid-template-columns: repeat(3, 1fr);	
 	grid-template-rows: repeat(3, 1fr);
 	grid-template-areas: 
 	"nav nav nav" 
 	". search ." 
 	"footer footer footer";
+	justify-content: center;
+	align-content: center;
+
 }
 
 .main {
 	grid-area: search;
+	display: inline-block;
 }
 
 .nav {
 	grid-area: nav;
-	background-color: lightblue;
+	list-style-type: none;
+	display: inline-block;	
+}
+
+.left, .right {
+	display:  inline;
 }
 
 footer {
 	grid-area: footer;
-	background-color: lightblue;	
+	display: inline-block;
 }
 
-body .container footer .foot_r {
-	justify-content: flex-end;
+.foot_l, .foot_r {
 	display: inline;
 }
 
-/*footer .foot_r {
-	grid-area: footer;
+
+/*NAVIGATION/FOOTER ALIGNMENT*/
+
+.left {
+	float: left;
 }
 
-footer .foot_l {
-	grid-area: footer;
-}
-
-.right a{
-	grid-area: nav;
-}
-
-.left a{
-	grid-area: nav;*/
-}
-
-body .container .nav, .left, .right {
-	display: inline;
-
+.right, .foot_r {
+	float: right;
 }
 
 
-
-
-/*NAVIGATION BAR*/
+/*NAVIGATION BAR TEXT DISPLAY*/
 
 body .container .nav .right a, body .container .nav .left a {
 	text-decoration-line: none;
