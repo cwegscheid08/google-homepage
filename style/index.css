@@ -1,5 +1,10 @@
 /*GRID/ GRID ASSIGNMENT*/
 
+html {
+	margin: 0;
+	padding: 0;
+	
+}
 
 .container {
 	display: grid;
@@ -40,7 +45,7 @@ footer {
 	display: inline-block;
 	align-self: end;
 	background: whitesmoke;
-	border: 1px solid gainsboro;
+	border: 1px solid #e8e8e8d1;
 	padding: 0px 0px 20px 0px;
 	word-spacing: 15px;
 }
@@ -77,19 +82,43 @@ body .container footer .foot_l a, body .container footer .foot_r a {
 
 /*SEARCH AREA*/
 
+img {
+	position: relative;
+	left: 78px;
+	bottom: 5px;
+}
+
 .search{
+	text-align: center;
 
 }
 
 .box {
-	width: 400px;
+	width: 428px;
 	height: 30px;
 	border-radius: 2px;
-	box-shadow: -2px 1px 5px -2px #b3b3b3;
-	border: 1px solid #eaeaea;
+	box-shadow: -2px 1px 5px -2px #000000;
+	border: 1px solid rgba(234, 234, 234, 0.52);
 }
 
-.button {
-	background: gainsboro;
-	color: gray
+button {
+	background: #eaeaea;
+	color: #717171;
+	width: auto;
+	height: 25px;
+	border: 1px solid #eaeaea;
+	border-radius: 2px;
+	font-weight: bold;
+}
+
+.b1 {
+	position: relative;
+	top: 30px;
+	right: 2px;
+}
+
+.b2 {
+	position: relative;
+	top:  30px;
+	left: 2px;
 }
